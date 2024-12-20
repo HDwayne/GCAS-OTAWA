@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<flowfacts>
+    <function name="stabilize" executed="true" extern="false">
+        <call name="doGyroChannel" numcall="28" line="572" source="helico.c" executed="true" extern="false">
+            <function name="doGyroChannel">
+                <call name="recordSample" numcall="9" line="359" source="helico.c" executed="true" extern="false">
+                    <function name="recordSample">
+                        <loop loopId="3" line="200" source="helico.c" exact="true" maxcount="31" totalcount="31">
+                        </loop>
+                    </function>
+                </call>
+                <call name="FixFilter" numcall="10" line="360" source="helico.c" executed="true" extern="false">
+                    <function name="FixFilter">
+                        <loop loopId="2" line="186" source="helico.c" exact="true" maxcount="32" totalcount="32">
+                        </loop>
+                    </function>
+                </call>
+            </function>
+        </call>
+        <call name="action" numcall="29" line="573" source="helico.c" executed="true" extern="false">
+            <function name="action">
+                <loop loopId="4" line="257" source="helico.c" exact="true" maxcount="8" totalcount="8">
+                </loop>
+            </function>
+        </call>
+        <call name="doAROMXChannel" numcall="32" line="578" source="helico.c" executed="true" extern="false">
+            <function name="doAROMXChannel">
+                <conditional id="IF-26"> <condition line="379" source="helico.c" executed="true"> </condition>
+                    <case cond="1" executed="false" line="380" source="helico.c">
+                        <call name="recordSample" numcall="11" line="380" source="helico.c" executed="false" extern="false">
+                            <function name="recordSample">
+                                <loop loopId="3" line="200" source="helico.c" exact="true" maxcount="0" totalcount="0">
+                                </loop>
+                            </function>
+                        </call>
+                        <call name="FixFilter" numcall="12" line="381" source="helico.c" executed="false" extern="false">
+                            <function name="FixFilter">
+                                <loop loopId="2" line="186" source="helico.c" exact="true" maxcount="0" totalcount="0">
+                                </loop>
+                            </function>
+                        </call>
+                    </case>
+                    <case cond="0" executed="true" >
+                    </case>
+                </conditional>
+            </function>
+        </call>
+        <call name="action" numcall="33" line="579" source="helico.c" executed="true" extern="false">
+            <function name="action">
+                <loop loopId="4" line="257" source="helico.c" exact="true" maxcount="8" totalcount="8">
+                </loop>
+            </function>
+        </call>
+        <call name="doAROMYChannel" numcall="36" line="584" source="helico.c" executed="true" extern="false">
+            <function name="doAROMYChannel">
+                <conditional id="IF-36"> <condition line="409" source="helico.c" executed="true"> </condition>
+                    <case cond="1" executed="false" line="410" source="helico.c">
+                        <call name="recordSample" numcall="13" line="410" source="helico.c" executed="false" extern="false">
+                            <function name="recordSample">
+                                <loop loopId="3" line="200" source="helico.c" exact="true" maxcount="0" totalcount="0">
+                                </loop>
+                            </function>
+                        </call>
+                        <call name="FixFilter" numcall="14" line="411" source="helico.c" executed="false" extern="false">
+                            <function name="FixFilter">
+                                <loop loopId="2" line="186" source="helico.c" exact="true" maxcount="0" totalcount="0">
+                                </loop>
+                            </function>
+                        </call>
+                    </case>
+                    <case cond="0" executed="true" >
+                    </case>
+                </conditional>
+            </function>
+        </call>
+        <call name="action" numcall="37" line="585" source="helico.c" executed="true" extern="false">
+            <function name="action">
+                <loop loopId="4" line="257" source="helico.c" exact="true" maxcount="8" totalcount="8">
+                </loop>
+            </function>
+        </call>
+        <call name="doAROMZChannel" numcall="40" line="590" source="helico.c" executed="true" extern="false">
+            <function name="doAROMZChannel">
+                <conditional id="IF-45"> <condition line="436" source="helico.c" executed="true"> </condition>
+                    <case cond="1" executed="false" line="437" source="helico.c">
+                        <call name="recordSample" numcall="15" line="437" source="helico.c" executed="false" extern="false">
+                            <function name="recordSample">
+                                <loop loopId="3" line="200" source="helico.c" exact="true" maxcount="0" totalcount="0">
+                                </loop>
+                            </function>
+                        </call>
+                        <call name="FixFilter" numcall="16" line="438" source="helico.c" executed="false" extern="false">
+                            <function name="FixFilter">
+                                <loop loopId="2" line="186" source="helico.c" exact="true" maxcount="0" totalcount="0">
+                                </loop>
+                            </function>
+                        </call>
+                    </case>
+                    <case cond="0" executed="true" >
+                    </case>
+                </conditional>
+            </function>
+        </call>
+        <call name="action" numcall="41" line="591" source="helico.c" executed="true" extern="false">
+            <function name="action">
+                <loop loopId="4" line="257" source="helico.c" exact="true" maxcount="8" totalcount="8">
+                </loop>
+            </function>
+        </call>
+        <loop source="helico.c" line="186" max="32"  min="0">
+        </loop>
+        <loop source="helico.c" line="200" max="31"  min="0">
+        </loop>
+        <loop source="helico.c" line="257" max="8"  min="8">
+        </loop>
+    </function>
+</flowfacts>
+

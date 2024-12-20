@@ -1,0 +1,81 @@
+
+control.elf:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+00000400 <_start>:
+ 400:	e92d4800 	push	{fp, lr}
+ 404:	e28db004 	add	fp, sp, #4
+ 408:	e24dd008 	sub	sp, sp, #8
+ 40c:	eb000010 	bl	454 <main>
+ 410:	e50b0008 	str	r0, [fp, #-8]
+ 414:	e51b0008 	ldr	r0, [fp, #-8]
+ 418:	eb000028 	bl	4c0 <_exit>
+
+0000041c <one>:
+ 41c:	e52db004 	push	{fp}		@ (str fp, [sp, #-4]!)
+ 420:	e28db000 	add	fp, sp, #0
+ 424:	e3a03001 	mov	r3, #1
+ 428:	e1a00003 	mov	r0, r3
+ 42c:	e28bd000 	add	sp, fp, #0
+ 430:	e49db004 	pop	{fp}		@ (ldr fp, [sp], #4)
+ 434:	e12fff1e 	bx	lr
+
+00000438 <zero>:
+ 438:	e52db004 	push	{fp}		@ (str fp, [sp, #-4]!)
+ 43c:	e28db000 	add	fp, sp, #0
+ 440:	e3a03000 	mov	r3, #0
+ 444:	e1a00003 	mov	r0, r3
+ 448:	e28bd000 	add	sp, fp, #0
+ 44c:	e49db004 	pop	{fp}		@ (ldr fp, [sp], #4)
+ 450:	e12fff1e 	bx	lr
+
+00000454 <main>:
+ 454:	e92d4800 	push	{fp, lr}
+ 458:	e28db004 	add	fp, sp, #4
+ 45c:	e24dd010 	sub	sp, sp, #16
+ 460:	e50b0010 	str	r0, [fp, #-16]
+ 464:	e50b1014 	str	r1, [fp, #-20]	@ 0xffffffec
+ 468:	e51b3010 	ldr	r3, [fp, #-16]
+ 46c:	e3530000 	cmp	r3, #0
+ 470:	1a000001 	bne	47c <main+0x28>
+ 474:	e3a00001 	mov	r0, #1
+ 478:	eb000010 	bl	4c0 <_exit>
+ 47c:	e51b3010 	ldr	r3, [fp, #-16]
+ 480:	e3530001 	cmp	r3, #1
+ 484:	ca000002 	bgt	494 <main+0x40>
+ 488:	e59f3028 	ldr	r3, [pc, #40]	@ 4b8 <main+0x64>
+ 48c:	e50b3008 	str	r3, [fp, #-8]
+ 490:	ea000001 	b	49c <main+0x48>
+ 494:	e59f3020 	ldr	r3, [pc, #32]	@ 4bc <main+0x68>
+ 498:	e50b3008 	str	r3, [fp, #-8]
+ 49c:	e51b3008 	ldr	r3, [fp, #-8]
+ 4a0:	e12fff33 	blx	r3
+ 4a4:	e50b000c 	str	r0, [fp, #-12]
+ 4a8:	e51b300c 	ldr	r3, [fp, #-12]
+ 4ac:	e1a00003 	mov	r0, r3
+ 4b0:	e24bd004 	sub	sp, fp, #4
+ 4b4:	e8bd8800 	pop	{fp, pc}
+ 4b8:	0000041c 	.word	0x0000041c
+ 4bc:	00000438 	.word	0x00000438
+
+000004c0 <_exit>:
+ 4c0:	e92d4080 	push	{r7, lr}
+ 4c4:	e3a070f8 	mov	r7, #248	@ 0xf8
+ 4c8:	ef000000 	svc	0x00000000
+ 4cc:	e3700a01 	cmn	r0, #4096	@ 0x1000
+ 4d0:	9a000005 	bls	4ec <_exit+0x2c>
+ 4d4:	e1a03000 	mov	r3, r0
+ 4d8:	eb000008 	bl	500 <__aeabi_read_tp>
+ 4dc:	e59f200c 	ldr	r2, [pc, #12]	@ 4f0 <_exit+0x30>
+ 4e0:	e2633000 	rsb	r3, r3, #0
+ 4e4:	e79f2002 	ldr	r2, [pc, r2]
+ 4e8:	e7803002 	str	r3, [r0, r2]
+ 4ec:	e7f000f0 	udf	#0
+ 4f0:	3ffffb14 	.word	0x3ffffb14
+	...
+
+00000500 <__aeabi_read_tp>:
+ 500:	e3e00a0f 	mvn	r0, #61440	@ 0xf000
+ 504:	e240f01f 	sub	pc, r0, #31

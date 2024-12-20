@@ -1,0 +1,5 @@
+/home/dwayne/Documents/otawa/labwork2/CMakeFiles/labwork.dir
+/home/dwayne/Documents/otawa/labwork2/CMakeFiles/dist.dir
+/home/dwayne/Documents/otawa/labwork2/CMakeFiles/otawa-dist.dir
+/home/dwayne/Documents/otawa/labwork2/CMakeFiles/edit_cache.dir
+/home/dwayne/Documents/otawa/labwork2/CMakeFiles/rebuild_cache.dir

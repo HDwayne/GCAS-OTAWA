@@ -1,0 +1,15 @@
+#Label: Total Execution Count
+#Total: 0
+#LineOp: sum
+#ConcatOp: sum
+#ContextOp: sum
+#Description: Represents the number of execution of the code along the worst-case execution path.
+1	00000454	32	[]
+0	00000474	8	[]
+1	0000047c	12	[]
+1	00000488	12	[]
+1	0000049c	8	[]
+1	000004a4	20	[]
+0	00000494	8	[]
+1	00000438	28	[FUN(00000454), CALL(000004a0)]
+0	0000041c	28	[FUN(00000454), CALL(000004a0)]

@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/labwork.dir/labwork.cpp.o -o labwork  -L/home/dwayne/Documents/otawa/otawa/lib -lotawa -lelm -lgel++ -lgel -Wl,-rpath -Wl,/home/dwayne/Documents/otawa/otawa/lib 

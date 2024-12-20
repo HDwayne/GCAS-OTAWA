@@ -1,0 +1,42 @@
+#Name: register
+#Label: Register Usage
+#Description: View read and written registers.
+0	1	00000454	read r13, r11, r14, write r13
+0	1	00000458	read r13, write r11
+0	1	0000045c	read r13, write r13
+0	1	00000460	read r11, r0
+0	1	00000464	read r11, r1
+0	1	00000468	read r11, write r3
+0	1	0000046c	read r3, write sr
+0	1	00000470	read sr, write r14
+0	2	0000047c	read r11, write r3
+0	2	00000480	read r3, write sr
+0	2	00000484	read sr, write r14
+0	3	00000494	read r15, write r3
+0	3	00000498	read r11, r3
+0	4	000004a4	read r11, r0
+0	4	000004a8	read r11, write r3
+0	4	000004ac	read r3, write r0
+0	4	000004b0	read r11, write r13
+0	4	000004b4	read r13, write r13, r11, r15
+0	5	00000488	read r15, write r3
+0	5	0000048c	read r11, r3
+0	5	00000490	write r14
+0	6	0000049c	read r11, write r3
+0	6	000004a0	 none
+0	7	00000474	write r0
+0	7	00000478	write r14, r14
+1	1	00000438	read r13, r11, write r13
+1	1	0000043c	read r13, write r11
+1	1	00000440	write r3
+1	1	00000444	read r3, write r0
+1	1	00000448	read r11, write r13
+1	1	0000044c	read r13, write r11, r13
+1	1	00000450	read r14, write r15
+2	1	0000041c	read r13, r11, write r13
+2	1	00000420	read r13, write r11
+2	1	00000424	write r3
+2	1	00000428	read r3, write r0
+2	1	0000042c	read r11, write r13
+2	1	00000430	read r13, write r11, r13
+2	1	00000434	read r14, write r15

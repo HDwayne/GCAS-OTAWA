@@ -1,0 +1,7 @@
+checksum "bubble.elf" 0x24f793d1;
+
+// Function bubbleSort (bubble.c:9)
+loop "bubbleSort" + 0x108 max 8 ; // 0x51c (bubble.c:12)
+	loop "bubbleSort" + 0xe0 total 35 ; // 0x4f4 (bubble.c:15)
+
+

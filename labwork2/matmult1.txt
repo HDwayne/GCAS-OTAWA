@@ -1,0 +1,31 @@
+Processed BB @000102dc with total time = 9
+Processed BB @00010408 with total time = 8
+Processed BB @000102f4 with total time = 5
+Processed BB @000103f0 with total time = 8
+Processed BB @00010300 with total time = 8
+Processed BB @00010378 with total time = 8
+Processed BB @00010314 with total time = 70
+Processed BB @00010384 with total time = 8
+Processed BB @000103bc with total time = 23
+Processed BB @00010390 with total time = 29
+Processed BB @000103e4 with total time = 8
+Processed BB @000103fc with total time = 8
+Processed BB @00010414 with total time = 10
+Starting FlashAnalysis...
+Adjusted TIME for BB @000102dc: + 40 cycles for flash memory.
+Adjusted TIME for BB @00010408: + 0 cycles for flash memory.
+Adjusted TIME for BB @000102f4: + 0 cycles for flash memory.
+Adjusted TIME for BB @000103f0: + 0 cycles for flash memory.
+Adjusted TIME for BB @00010300: + 0 cycles for flash memory.
+Adjusted TIME for BB @00010378: + 40 cycles for flash memory.
+Adjusted TIME for BB @00010314: + 80 cycles for flash memory.
+Adjusted TIME for BB @00010384: + 0 cycles for flash memory.
+Adjusted TIME for BB @000103bc: + 60 cycles for flash memory.
+Adjusted TIME for BB @00010390: + 40 cycles for flash memory.
+Adjusted TIME for BB @000103e4: + 0 cycles for flash memory.
+Adjusted TIME for BB @000103fc: + 40 cycles for flash memory.
+Adjusted TIME for BB @00010414: + 40 cycles for flash memory.
+Total accesses: 83
+Total hits: 66 (79.5181%)
+Total misses: 17 (20.4819%)
+WCET = 215097

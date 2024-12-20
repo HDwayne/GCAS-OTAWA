@@ -1,0 +1,8 @@
+checksum "matmult.elf" 0xfc947570;
+
+// Function main ()
+loop "main" + 0x12c 10 ; // 0x10408 ()
+	loop "main" + 0x114 10 ; // 0x103f0 ()
+		loop "main" + 0x9c 10 ; // 0x10378 ()
+
+

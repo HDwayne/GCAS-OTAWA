@@ -1,0 +1,7 @@
+checksum "bubble.elf" 0xdd464584;
+
+// Function main ()
+loop "main" + 0x110 100 ; // 0x103ec ()
+	loop "main" + 0xf4 max 99 total 4950; // 0x103d0 ()
+
+
